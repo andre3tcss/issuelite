@@ -1,0 +1,28 @@
+# Arquivos de Build do Maven
+target/
+
+# Arquivos de Log
+*.log
+
+# Arquivos do IntelliJ
+.idea/
+*.iml
+
+# Arquivos de Configuração do VS Code
+.vscode/
+
+# Arquivos do Eclipse
+.project
+.classpath
+.settings/
+
+# Arquivos do NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+.nb-gradle/
+
+# Arquivos de Sistema (macOS/Windows)
+.DS_Store
+Thumbs.db
