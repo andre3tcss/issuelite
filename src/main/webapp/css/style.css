@@ -105,3 +105,108 @@ body {
     border-radius: 6px;
     margin-bottom: 15px;
 }
+
+.main-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+}
+
+/* Reset do Body para quando está logado */
+body.app {
+    height: auto;
+    background-color: #f0f2f5;
+    display: block;
+}
+
+/* Cabeçalho / Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #dddfe2;
+    margin-bottom: 20px;
+}
+
+.navbar-brand a {
+    font-size: 24px;
+    font-weight: 600;
+    color: #1c1e21;
+    text-decoration: none;
+}
+
+.user-info {
+    color: #606770;
+}
+
+.user-info span {
+    margin-right: 15px;
+}
+
+.btn-logout {
+    color: #3b5998;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Header do Dashboard */
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.dashboard-header h2 {
+    margin: 0;
+    color: #1c1e21;
+}
+
+/* Botão "+ Criar Nova Issue" */
+.btn.btn-primary {
+    background-color: #3b5998; /* Azul do wireframe */
+    width: auto; /* Sobrescreve o width: 100% do login */
+    font-weight: 600;
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    border: 1px solid #dddfe2;
+    text-align: left;
+}
+
+table th {
+    background-color: #f0f2f5;
+    font-weight: 600;
+    color: #606770;
+}
+
+table td {
+    color: #1c1e21;
+}
+
+.actions a {
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #8a8d91;
+    border-top: 1px solid #dddfe2;
+    padding-top: 20px;
+}

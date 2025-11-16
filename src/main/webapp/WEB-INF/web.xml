@@ -8,8 +8,19 @@
     <display-name>IssueLite</display-name>
 
     <welcome-file-list>
-        <welcome-file>login</welcome-file>
+        <welcome-file>list</welcome-file>
     </welcome-file-list>
+
+    <filter>
+        <filter-name>AuthenticationFilter</filter-name>
+        <filter-class>br.com.issuelite.controller.AuthenticationFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>AuthenticationFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
 
     <servlet>
         <servlet-name>HealthCheckServlet</servlet-name>
@@ -36,6 +47,24 @@
     <servlet-mapping>
         <servlet-name>CadastroServlet</servlet-name>
         <url-pattern>/cadastro</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>br.com.issuelite.controller.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ListIssueServlet</servlet-name>
+        <servlet-class>br.com.issuelite.controller.ListIssueServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ListIssueServlet</servlet-name>
+        <url-pattern>/list</url-pattern>
     </servlet-mapping>
 
 </web-app>
