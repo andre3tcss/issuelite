@@ -256,3 +256,24 @@ table td {
 .btn-secondary:hover {
     background-color: #d8dbdf;
 }
+
+.app-logo {
+    height: 80px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.navbar-brand a {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #1c1e21;
+    text-decoration: none;
+}
+
+.login-logo {
+    display: block;
+    margin: 0 auto 20px auto;
+    height: 120px;
+}

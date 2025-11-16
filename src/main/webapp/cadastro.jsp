@@ -12,7 +12,8 @@
 <body>
 
 <div class="login-container">
-    <h1>Criar Conta</h1>
+    <img src="<c:url value='/img/logoIssueLite.png' />" alt="IssueLite Logo" class="login-logo">
+    <h2>Cadastro de Usuário</h2>
 
     <c:if test="${not empty errorMessage}">
         <div class="error-message">

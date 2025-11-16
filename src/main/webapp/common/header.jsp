@@ -12,7 +12,9 @@
 <div class="main-container">
     <header class="navbar">
         <div class="navbar-brand">
-            <a href="<c:url value='/list' />">🐜 IssueLite</a>
+            <a href="<c:url value='/list' />">
+                <img src="<c:url value='/img/logoIssueLite.png' />" alt="IssueLite Logo" class="app-logo">
+            </a>
         </div>
         <c:if test="${not empty sessionScope.usuarioLogado}">
             <div class="user-info">

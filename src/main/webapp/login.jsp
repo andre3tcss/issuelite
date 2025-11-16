@@ -12,7 +12,8 @@
 <body>
 
 <div class="login-container">
-    <h1>IssueLite</h1>
+    <img src="<c:url value='/img/logoIssueLite.png' />" alt="IssueLite Logo" class="login-logo">
+    <h2>Login</h2>
 
     <c:if test="${not empty errorMessage}">
         <div class="error-message">
