@@ -25,7 +25,9 @@
             <td><c:out value="${issue.projeto}" /></td>
             <td class="actions">
                 <a href="<c:url value='/edit?id=${issue.id}' />" title="Editar">✏️</a>
-                <a href="#" title="Excluir">🗑️</a>
+                <a href="<c:url value='/delete?id=${issue.id}' />"
+                   title="Excluir"
+                   onclick="return confirm('Tem certeza que deseja excluir esta issue?');">🗑️</a>
             </td>
         </tr>
     </c:forEach>

@@ -84,4 +84,13 @@
         <url-pattern>/edit</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>DeleteIssueServlet</servlet-name>
+        <servlet-class>br.com.issuelite.controller.DeleteIssueServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteIssueServlet</servlet-name>
+        <url-pattern>/delete</url-pattern>
+    </servlet-mapping>
+
 </web-app>

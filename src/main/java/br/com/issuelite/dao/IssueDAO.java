@@ -87,6 +87,20 @@ public class IssueDAO {
         }
     }
 
+    public boolean delete(int issueId, int userId) throws SQLException {
+        String sql = "DELETE FROM ISSUE WHERE id_issue = ? AND id_usuario_reportou = ?";
+
+        try (Connection conn = ConnectionFactory.getConnection();
+             PreparedStatement stmt = conn.prepareStatement(sql)) {
+
+            stmt.setInt(1, issueId);
+            stmt.setInt(2, userId); // Verificação de segurança
+
+            int rowsAffected = stmt.executeUpdate();
+            return rowsAffected > 0;
+        }
+    }
+
     private Issue mapResultSetToIssue(ResultSet rs) throws SQLException {
         Issue issue = new Issue();
         issue.setId(rs.getInt("id_issue"));
