@@ -210,3 +210,49 @@ table td {
     border-top: 1px solid #dddfe2;
     padding-top: 20px;
 }
+
+.form-issue .form-group {
+    margin-bottom: 15px;
+}
+
+.form-issue label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #606770;
+}
+
+.form-issue input[type="text"],
+.form-issue textarea,
+.form-issue select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.form-issue textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.form-actions {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #dddfe2;
+    display: flex;
+    gap: 10px;
+}
+
+.btn-secondary {
+    background-color: #e4e6eb;
+    color: #1c1e21;
+    font-weight: 600;
+    width: auto;
+}
+.btn-secondary:hover {
+    background-color: #d8dbdf;
+}

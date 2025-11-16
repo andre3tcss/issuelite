@@ -1,10 +1,11 @@
 <%@ page pageEncoding="UTF-8" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%-- listarIssues.jsp --%>
 <jsp:include page="common/header.jsp" />
 
 <div class="dashboard-header">
     <h2>Meus Projetos / Issues</h2>
-    <a href="#" class="btn btn-primary">+ Criar Nova Issue</a>
+    <a href="<c:url value='/create' />" class="btn btn-primary">+ Criar Nova Issue</a>
 </div>
 
 <table>
@@ -23,7 +24,7 @@
             <td><c:out value="${issue.status}" /></td>
             <td><c:out value="${issue.projeto}" /></td>
             <td class="actions">
-                <a href="#" title="Editar">✏️</a>
+                <a href="<c:url value='/edit?id=${issue.id}' />" title="Editar">✏️</a>
                 <a href="#" title="Excluir">🗑️</a>
             </td>
         </tr>

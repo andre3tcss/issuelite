@@ -67,4 +67,21 @@
         <url-pattern>/list</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>CreateIssueServlet</servlet-name>
+        <servlet-class>br.com.issuelite.controller.CreateIssueServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreateIssueServlet</servlet-name>
+        <url-pattern>/create</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>EditIssueServlet</servlet-name>
+        <servlet-class>br.com.issuelite.controller.EditIssueServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EditIssueServlet</servlet-name>
+        <url-pattern>/edit</url-pattern>
+    </servlet-mapping>
+
 </web-app>
