@@ -99,5 +99,5 @@ The database schema includes a pre-configured admin user:
 | Login Screen | Dashboard |
 |:---:|:---:|
 | ![Login](docs/login_screen.png) | ![Dashboard](docs/dashboard_screen.png) |
-| **Create Issue** | **Success Feedback** |
+| **Create Issue** |
 | ![Create Issue](docs/create_issue_screen.png) | 
