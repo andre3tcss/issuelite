@@ -19,7 +19,7 @@ An academic project for a lightweight Issue Tracker, engineered with **Java Web*
 
 ### 🏗️ MVC Architecture Flow
 
-mermaid
+```mermaid
 graph LR
     A[User/Browser] -->|HTTP Request| B(Authentication Filter)
     B -->|Allowed| C{Servlet Controller}
@@ -33,6 +33,7 @@ graph LR
     
     style A fill:#f9f,stroke:#333,stroke-width:2px
     style F fill:#bbf,stroke:#333,stroke-width:2px
+```
 
 ## 2. 🛠️ Tech Stack
 
