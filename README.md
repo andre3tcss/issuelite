@@ -1,4 +1,3 @@
-```markdown
 ![Java](https://img.shields.io/badge/Java-11%2B-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 ![Jakarta EE](https://img.shields.io/badge/Jakarta%20EE-9-F37021?style=for-the-badge&logo=eclipse-foundation&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-14-316192?style=for-the-badge&logo=postgresql&logoColor=white)
@@ -20,7 +19,7 @@ An academic project for a lightweight Issue Tracker, engineered with **Java Web*
 
 ### 🏗️ MVC Architecture Flow
 
-```mermaid
+mermaid
 graph LR
     A[User/Browser] -->|HTTP Request| B(Authentication Filter)
     B -->|Allowed| C{Servlet Controller}
